@@ -51,6 +51,19 @@ header
 					a
 						color: $branco
 						text-transform: uppercase
+						
+						&:hover
+							&:after
+								width: 40%
+
+						&:after
+							content: " "
+							display: table
+							margin: 0 auto
+							width: 60%
+							height: 2px
+							background-color: $branco
+							+transition(.3s)
 	
 		.social
 			li
